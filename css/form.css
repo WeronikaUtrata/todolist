@@ -7,7 +7,7 @@
     margin-right: 25px;
     flex: 1;
     border-radius: 5px;
-    font-size: large;
+    font-size: 18px;
 }
 
 .form__button {
@@ -16,7 +16,7 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-    font-size: large;
+    font-size: 18px;
 }
 
 .form__button:hover {
