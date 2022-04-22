@@ -1,0 +1,22 @@
+.section {
+    margin-top: 10px;
+    background: white;
+    border: #ddd;
+    border-radius: 5px;
+}
+
+.section__mainHeader {
+    font-size: 30px;
+    margin: 0;
+}
+.section__header {
+    font-size: 25px;
+    margin: 0;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.section__body {
+    padding: 20px;
+}
