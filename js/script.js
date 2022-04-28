@@ -12,7 +12,7 @@
     };
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({content: newTaskContent });
+        tasks.push({ content: newTaskContent });
         render();
     };
 
@@ -42,7 +42,6 @@
         for (const task of tasks) {
             tasksListHTMLContent += `
                 <li class="tasks__item js-task">
-            
                     <button class="tasks__button tasks__button--toggleDone js-toggleDone">
                         ${task.done ? "✔" : ""}
                     </button>
@@ -59,13 +58,13 @@
 
         document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
 
-        bindRemoveEvents(); 
+        bindRemoveEvents();
 
         bindToggleDoneEvents();
 
     };
 
-    const onFormSubmit = (event) => { 
+    const onFormSubmit = (event) => {
         event.preventDefault();
 
         const newTaskElement = document.querySelector(".js-newTask")
