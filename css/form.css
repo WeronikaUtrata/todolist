@@ -1,5 +1,10 @@
 .form {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.form__body {
+    padding: 20px;
 }
 
 .form__input {
@@ -21,6 +26,7 @@
 
 .form__button:hover {
     background: rgb(19, 180, 180);
+    cursor: pointer;
 }
 
 .form__button:active {

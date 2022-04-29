@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
     font-size: 18px;
+    word-break: break-word;
+}
+
+.tasks__body {
+    padding: 20px;
 }
 
 .tasks__item {
