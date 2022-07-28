@@ -1,6 +1,13 @@
 .form {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+}
+
+@media(max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
 }
 
 .form__body {
@@ -9,8 +16,6 @@
 
 .form__input {
     padding: 10px;
-    margin-right: 25px;
-    flex: 1;
     border: 1px solid hsl(0deg 0% 75%);
     border-radius: 5px;
     font-size: 18px;
@@ -34,10 +39,4 @@
 
 .form__button:active {
     background: rgb(1, 89, 89);
-}
-
-@media(max-width: 767px) {
-    .form {
-        grid-template-columns: 1fr;
-    }
 }
