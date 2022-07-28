@@ -11,6 +11,7 @@
     padding: 10px;
     margin-right: 25px;
     flex: 1;
+    border: 1px solid hsl(0deg 0% 75%);
     border-radius: 5px;
     font-size: 18px;
 }
@@ -22,11 +23,13 @@
     border: none;
     border-radius: 5px;
     font-size: 18px;
+    transition: 0.5s;
 }
 
 .form__button:hover {
     background: rgb(19, 180, 180);
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .form__button:active {
