@@ -10,10 +10,6 @@
     }
 }
 
-.form__body {
-    padding: 20px;
-}
-
 .form__input {
     padding: 10px;
     border: 1px solid hsl(0deg 0% 75%);
