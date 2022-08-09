@@ -64,17 +64,17 @@
 
     const renderTasks = () => {
         const taskToHTML = tasks.map(task => `
-            <li class="tasks__item ${task.done && hideDoneTasks ? "tasks__item--hidden" : ""} js-tasks">
-            <button class="tasks__button tasks__button--done js-toggleDone">
-             ${task.done ? "✔" : ""}
-            </button>
-            <span class="tasks__content ${task.done ? "tasks__content--done" : ""}">
-             ${task.content}
-            </span>
-            <button class="tasks__button tasks__button--remove js-remove">
-             🗑
-            </button>               
-            </li>
+                <li class="tasks__item${task.done && hideDoneTasks ? " tasks__item--hidden" : ""} js-task">
+                    <button class="tasks__button tasks__button--toggleDone js-toggleDone">
+                        ${task.done ? "✔" : ""}
+                    </button>
+                    <span class="tasks__content${task.done ? "tasks__content--done" : ""}">
+                        ${task.content}
+                    </span>
+                    <button class="tasks__button tasks__button--remove js-remove">
+                        🗑
+                    </button>
+                </li>
             `);
 
         document.querySelector(".js-tasks").innerHTML = taskToHTML.join("");
