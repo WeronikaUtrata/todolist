@@ -5,10 +5,6 @@
     font-size: 18px;
 }
 
-.tasks__body {
-    padding: 20px;
-}
-
 .tasks__item {
     display:grid;
     grid-template-columns: auto 1fr auto;
