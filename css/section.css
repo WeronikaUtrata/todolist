@@ -1,17 +1,31 @@
 .section {
-    margin-top: 10px;
+    margin: 10px 0;
     background: white;
-    border: #ddd;
     border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(198, 194, 194);
 }
 
-.section__mainHeader {
-    font-size: 25px;
-    margin: 0;
-}
 .section__header {
-    font-size: 25px;
-    margin: 0;
     border-bottom: 2px solid #ddd;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+@media (max-width: 767px) {
+    .section__header {
+        grid-template-columns: 1fr;
+    }
+}
+
+.section__body {
     padding: 20px;
+}
+
+.section__name {
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
 }
